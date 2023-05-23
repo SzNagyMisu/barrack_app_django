@@ -1,0 +1,18 @@
+<h1>Training sessions</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Start time</th>
+            <th>Trainer</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for session in training_sessions %}
+            <tr>
+                <td>{{session.start_time}}</td>
+                <td>{{session.trainer.name}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
